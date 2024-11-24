@@ -1,0 +1,50 @@
+html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        iframe {
+            position: absolute;
+            width: 1920px !important;
+            height: 1080px !important;
+            border: none;
+        }
+
+        #bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: burlywood;
+            z-index: 1000;
+        }
+
+        #genie {
+            font-family: sofachrome;
+            position: absolute;
+            top: 5%;
+            left: 43%;
+            font-size: xx-large;
+            z-index: 1001;
+        }
+
+        #home{
+            font-family: poppins;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            font-size: x-large;
+            z-index: 1001;  
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+        @font-face {
+            font-family: sofachrome;
+            src: url("/chatbot/assets/sofachrome.otf") format("opentype");
+        }

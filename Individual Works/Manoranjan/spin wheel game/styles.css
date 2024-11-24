@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#chart {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 50px; /* Adding space between wheel and description */
+}
+
+#question {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+#question h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 600px) {
+    #chart {
+        width: 100%;
+        height: auto;
+    }
+
+    #question h1 {
+        font-size: 18px;
+    }
+}

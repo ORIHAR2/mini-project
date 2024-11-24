@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+        <p class="title">
+            MATCH-UP MAYHEM
+        </p>
+        <p class="result">
+            
+        </p>
+    <main>
+        <div class="left">
+            <div class="drag-item i1" draggable="true" data-set="i1" id="l1" >
+                Apple
+            </div>
+            <div class="drag-item i2" draggable="true" data-set="i2" id="l2" >
+                Banana
+            </div>
+            <div class="drag-item i3" draggable="true" data-set="i3" id="l3">
+                Grape
+            </div>
+            <div class="drag-item i4" draggable="true" data-set="i4" id="l4">
+                Robust
+            </div>
+        </div>
+    
+        <div id="drop-zone">
+            
+        </div>
+    
+        <div class="right">
+            <div class="drag-item i4" draggable="true" data-set="i4" id="ll4">
+                Green
+            </div>
+            <div class="drag-item i1" draggable="true" data-set="i1" id="ll1">
+                Red
+            </div>
+            <div class="drag-item i3" draggable="true" data-set="i3" id="ll3">
+                Vilot
+            </div>
+            <div class="drag-item i2" draggable="true" data-set="i2" id="ll2">
+                Yellow
+            </div>
+        </div>
+    
+    </main>
+   
+    <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+
+html ,body {
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.top-section {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to bottom, #cfd68c, #A39A8F);
+}
+
+.top-section img {
+    position: absolute; /* Absolute positioning */
+}
+
+/* Position and size for Image 1 */
+.image1 {
+    top: 350px;
+    left: 0;
+    width: 577px;
+    height: 238px;
+}
+
+/* Position and size for Image 2 */
+.image2 {
+    top: 67px;
+    left: 1208px;
+    width: 516px;
+    height: 507px;
+    z-index: 10; /* In front of other images */
+}
+
+
+.image3 {
+    top: 400px;
+    left:1610px;
+    width: 136px;
+    height: 176px;
+    z-index: 10; /* In front of other images */
+}
+
+.image4 {
+    top: 189px;
+    left: 1507px;
+    width: 185px;
+    height: 357px;
+}
+
+.image5 {
+    top: 3px;
+    left: 12px;
+    width: 337px;
+    height: 319px;
+    z-index: 1; /* Behind other images */
+}
+
+/* Position and size for Image 6 (Orange Cloud Right) */
+.image6 {
+    top: 305px;
+    right:2px;
+    width: 221px;
+    height: 270px;
+    z-index: 1; /* Behind other images */
+}
+
+/* Position and size for Image 7 (BG Flag) */
+.image7 {
+    top: 0;
+    left: 505px;
+    width: 725px;
+    height: 658px;
+}
+
+.image8 {
+    top: 382px;
+    left: 1208px;
+    width: 183px;
+    height: 196px;
+    z-index: 20;
+}
+
+/* Position and size for Image 9 (Indian Flag Right) */
+.image9 {
+    top: 240px;
+    left: 1590px;
+    width: 185px;
+    height: 357px;
+    z-index: 20; /* Ensure it's in front of other elements if necessary */
+}
+
+/* Position and size for Image 10 (Justice Lady) */
+.image10 {
+    top: 75px;
+    left: 46%; /* Center this image if it's a centerpiece */
+    width: 430px;
+    height: 503px;
+    z-index: 5;
+    transform: translateX(-50%); /* Centers the image based on its own width */
+
+}
+
+.text-container {
+    position: absolute;
+    left: 780px;
+    width: 650px;
+    height: 250px;
+}
+
+.main-text {
+    font-family: 'Nerko One', cursive;
+    bottom: -90px;
+    font-weight: 400;
+    font-size: 45px;
+    color: white;
+    line-height: 1;
+    position: absolute;
+    left: 120px;
+    width: 100%;
+    z-index: 45;
+    text-align: center;
+}
+
+/* Play Button */
+.play-button {
+    position: absolute;
+    top: 58px;
+    right: 300px;
+    width: 140px;
+    height: 56px;
+    border-radius: 50px;
+    background-color: #205C93;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background-color: #1a4a74;
+}
+
+/* Login Button */
+.login-button {
+    position: absolute;
+    top: 58px;
+    right: 120px;
+    width: 140px;
+    height: 56px;
+    border-radius: 50px;
+    background-color: orange;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #e66c4f;
+}
+
+/* Bottom Section */
+.bottom-section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #ffffff, #A39A8F);
+}
+
+/* Text Container */
+.text-container {
+    position: absolute;
+    top: 16px;
+    left: 518px;
+    width: 695px;
+    height: 55px;
+}
+
+.games-text {
+    font-family: 'Nerko One', cursive;
+    font-weight: 400;
+    font-size: 40px; /* Adjust size as needed */
+    color: #000; /* Adjust color as needed */
+    text-align: center;
+    line-height: 53px;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    }
+
+
+/* Boxes Container */
+.boxes-container {
+    position: absolute;
+    top: 20px; /* Adjust as needed to position boxes below the text */
+    left: 0;
+    width: 100%; /* Use full width */
+    display: flex;
+    justify-content: space-between; /* Space out the items evenly */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    }
+
+/* Circle Box */
+.circle-box1{
+    width: 97px;
+    height: 97px;
+    background-color: #87CEEB; /* Sky Blue */
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner Shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-box2{
+    width: 97px;
+    height: 97px;
+    background-color: #8E60B8;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner Shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-box3{
+    width: 97px;
+    height: 97px;
+    background-color: #2EAEA4;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner Shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-box4{
+    width: 97px;
+    height: 97px;
+    background-color: #2B95B6;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner Shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-box5{
+    width: 97px;
+    height: 97px;
+    background-color: #EC5138;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner Shadow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Star */
+.star {
+    width: 71px;
+    height: 71px;
+}
+
+/* Gradient Boxes */
+.gradient-box {
+    width: 252px;
+    height: 358px;
+    border-radius: 30px;
+}
+
+/* Individual Gradient Boxes */
+.gradient-box1 {
+    background: linear-gradient(to bottom, #EC5138 0%, #4F0B00 100%);
+}
+
+.gradient-box2 {
+    background: linear-gradient(to bottom, #8E60B8 0%, #1B092D 100%);
+}
+
+.gradient-box3 {
+    background: linear-gradient(to bottom, #2EAEA4 0%, #0C312E 100%);
+}
+
+.gradient-box4 {
+    background: linear-gradient(to bottom, #2B95B6 0%, #041115 100%);
+}
+
+/* Adjust spacing between items if needed */
+.boxes-container > div {
+    margin: 0 10px; /* Adjust spacing between items */
+}
+/* Gradient Boxes */
+.gradient-box {
+    position: relative; /* For positioning the image and caption */
+    width: 252px;
+    height: 358px;
+    border-radius: 30px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+/* Image inside gradient box */
+.box-image {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensure it behaves like a block-level element */
+}
+
+/* Caption for the image */
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Nerko One', cursive;
+    font-size: 35px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.gradient-box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+

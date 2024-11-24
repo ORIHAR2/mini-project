@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/resource/styles.css">
+</head>
+
+<body>
+    <div id="resources">
+        <h1>Happy Learning!</h1>
+        <br>
+        <h3>Select the Title You Want to Explore</h3>
+        <div id="cards">
+            <a href="#" alt="PreAmble" onclick="openPreamble()">
+                <div class="card">
+                    <div class="wrapper">
+                        <img src="" class="cover-image" />
+                    </div>
+                    <img src="/resource/assets/preamble_title.png" class="title" />
+                    <img src="/resource/assets/Boy1.svg" class="character" />
+                </div>
+            </a>
+
+            <a href="#" alt="PreAmble" onclick="openPreamble()">
+                <div class="card">
+                    <div class="wrapper">
+                        <img src="" class="cover-image" />
+                    </div>
+                    <img src="/resource/assets/fundamental_rights_title.png" class="title" />
+                    <img src="/resource/assets/Boy2.svg" class="character" />
+                </div>
+            </a>
+            <a href="#" alt="PreAmble" onclick="openPreamble()">
+                <div class="card">
+                    <div class="wrapper">
+                        <img src="" class="cover-image" />
+                    </div>
+                    <img src="/resource/assets/fundamental_duties_title.png" class="title" />
+                    <img src="/resource/assets/Boy3.svg" class="character" />
+                </div>
+            </a>
+
+            <a href="#" alt="PreAmble" onclick="openPreamble()">
+                <div class="card">
+                    <div class="wrapper">
+                        <img src="" class="cover-image" />
+                    </div>
+                    <img src="/resource/assets/DSP_title.png" class="title" />
+                    <img src="/resource/assets/police.png" class="character" />
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="preamble hidden">
+        <button id="alltopic" onclick="closePreamble()">Menu</button>
+        <h1>Preamble</h1>
+        <ul>
+            <li><b>Sovereign Nation: </b>India is free and independent, making its own laws without interference from
+                other countries. This means India governs itself and no other country controls its decisions.</li>
+            <br>
+            <li><b>Socialist Values: </b> The government ensures that wealth is shared fairly among citizens. Everyone
+                should have equal access to resources and opportunities.</li>
+            <br>
+            <li><b>Secular Nation: </b>All religions are treated equally without any bias. No religion is given special
+                treatment, and everyone is free to practice their faith.</li>
+        </ul>
+        <div id="navigation">
+            <button id="prev" class="hidden" onclick="prevPreamble()" on>Previous</button>
+            <button id="next" onclick="nextPreamble()">Next</button>
+        </div>
+    </div>
+
+    <div class="preamble hidden">
+        <button id="alltopic" onclick="closePreamble()">Menu</button>
+        <h1>Preamble</h1>
+        <ul>
+            <li><b>Democratic System: </b>Leaders are elected by the people, and citizens have the power to vote. This
+                means people choose who represents them in the government.</li>
+            <br>
+            <li><b>Justice, Liberty, Equality: </b>The Constitution guarantees fairness, freedom, and equal rights for
+                everyone. Everyone is treated equally, has the freedom to express themselves, and has access to fair
+                opportunities.</li>
+        </ul>
+        <div id="navigation">
+            <button id="prev" onclick="prevPreamble()" on>Previous</button>
+            <button id="next" class="hidden" onclick="nextPreamble()">Next</button>
+        </div>
+    </div>
+    <script src="/resource/script.js"></script>
+</body>
+
+</html>

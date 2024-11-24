@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cardgame/styles.css" />
+    <link rel="stylesheet" href="/cardgame/pop.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <title>Card Game</title>
+  </head>
+
+  <body>
+    
+
+    
+    <div class="topnav">
+      <a class="back-btn" href="/allgames">󰁍</a>
+
+      <div class="topnav-centered">
+        Card Quest
+      </div>
+
+      <div class="topnav_right">
+        <div class="Life">
+          <img src="/cardgame/images/heart.png" class="heart heart_img" id="life3">
+          <img src="/cardgame/images/heart.png" class="heart heart_img" id="life2">
+          <img src="/cardgame/images/heart.png" class="heart heart_img" id="life1">
+        </div>
+
+        <div class="score">
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="card-container" class="grid-container" >
+      
+    </div>
+
+    <div id="dialog" class="dialog" >
+
+      <div class="dialog-content">
+        <!-- <p>Choose True or False</p> -->
+
+        <div class="img-dialog-container">
+          <div id="ques" class="centered">
+            
+          </div>
+        </div>
+
+        <div class="last_btn">
+          <button class="button" id="true-btn">Right</button>
+          <button class="button" id="false-btn">Wrong</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="popup-overlay" class="overlay">
+      <div class="popup-box">
+          <p class="popup-title">Game Over</p>
+          <p class="popup-content">YOU WON</p>
+          <button id="close-popup" class="close-btn">Retry</button>
+      </div>
+    </div>
+
+  
+    <script src="/cardgame/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+html {
+  font-size: 18px;
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-nerko-one: "Nerko One";
+  --font-cabin: Cabin;
+
+  /* font sizes */
+  --font-size-17xl: 2rem;
+  --font-size-3xl: 1.222rem;
+  --font-size-10xl: 1.611rem;
+  --font-size-26xl: 2.5rem;
+  --font-size-6xl: 1.389rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-steelblue-100: #205c93;
+  --color-coral: #ff7a4f;
+
+  /* Gaps */
+  --gap-12xs: 0.055rem;
+
+  /* Paddings */
+  --padding-smi: 0.722rem;
+  --padding-12xs: 0.055rem;
+  --padding-5xs: 0.444rem;
+  --padding-xl: 1.111rem;
+  --padding-95xl: 6.333rem;
+  --padding-103xl: 6.777rem;
+  --padding-25xl: 2.444rem;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+  --br-31xl: 50px;
+}

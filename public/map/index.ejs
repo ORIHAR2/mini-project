@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/map/styles.css" />
+</head>
+
+<body>
+    <canvas id="mainFrame" class="dimmed"></canvas>
+    <div id="start">
+        <h3>W A S D for controls</h3>
+        <h3>Stand in front of house and press X to teleport</h3>
+        <h3>Press Any Button To Start</h3>
+    </div>
+
+    <div id="info" class="hidden">
+        <h1>INFO PAGE</h1>
+        <div id="infoContainer">
+            <div id="i1" class="infox">
+                <img src="/map/assets/images/genie.png" alt="genie">
+                <p>Genie ,The Chatbot</p>
+            </div>
+            <div id="i2" class="infox">
+                <img src="/map/assets/images/resource.png" alt="genie">
+                <p>Resources</p>
+            </div>
+            <div id="i2" class="infox">
+                <img src="/map/assets/images/card_game.png" alt="genie">
+                <p>Card Game</p>
+            </div>
+            <div id="i3" class="infox">
+                <img src="/map/assets/images/situation_game.png" alt="genie">
+                <p>Situation_game</p>
+            </div>
+            <div id="i2" class="infox">
+                <img src="/map/assets/images/quiz_game.png" alt="genie">
+                <p>Quiz Game</p>
+            </div>
+            <div id="i6" class="infox">
+                <img src="/map/assets/images/npc.png" alt="genie">
+                <p>Non-Player Character</p>
+            </div>
+        </div>
+        <h3>Press I to close</h3>
+    </div>
+
+    <div id="commands" class="dimmed">
+        <p>Press I For Info
+        <p>
+    </div>
+
+    <div id="xbutton" class="hidden">
+        <h3>X</h3>
+    </div>
+
+    <div id="resources" class="hidden">
+        <h1>Happy Learning!</h1>
+        <br>
+        <h3>Select the Title You Want to Explore</h3>
+        <div id="cards">
+            <a href="#" alt="PreAmble" onclick="openPreamble()">
+                <div class="card">
+                    <div class="wrapper">
+                        <img src="" class="cover-image" />
+                    </div>
+                    <img src="/map/assets/images/preamble_title.png" class="title" />
+                    <img src="/map/assets/images/Boy1.svg" class="character" />
+                </div>
+            </a>
+
+            <a href="#" alt="PreAmble" onclick="openPreamble()">
+                <div class="card">
+                    <div class="wrapper">
+                        <img src="" class="cover-image" />
+                    </div>
+                    <img src="/map/assets/images/fundamental_rights_title.png" class="title" />
+                    <img src="/map/assets/images/Boy2.svg" class="character" />
+                </div>
+            </a>
+            <a href="#" alt="PreAmble" onclick="openPreamble()">
+                <div class="card">
+                    <div class="wrapper">
+                        <img src="" class="cover-image" />
+                    </div>
+                    <img src="/map/assets/images/fundamental_duties_title.png" class="title" />
+                    <img src="/map/assets/images/Boy3.svg" class="character" />
+                </div>
+            </a>
+
+            <a href="#" alt="PreAmble" onclick="openPreamble()">
+                <div class="card">
+                    <div class="wrapper">
+                        <img src="" class="cover-image" />
+                    </div>
+                    <img src="/map/assets/images/DSP_title.png" class="title" />
+                    <img src="/map/assets/images/police.png" class="character" />
+                </div>
+            </a>
+        </div>
+
+        <h2>Press Q to Quit</h2>
+    </div>
+
+    <div class="preamble hidden">
+        <button id="alltopic" onclick="closePreamble()">Menu</button>
+        <h1>Preamble</h1>
+        <ul>
+            <li><b>Sovereign Nation: </b>India is free and independent, making its own laws without interference from
+                other countries. This means India governs itself and no other country controls its decisions.</li>
+            <br>
+            <li><b>Socialist Values: </b> The government ensures that wealth is shared fairly among citizens. Everyone
+                should have equal access to resources and opportunities.</li>
+            <br>
+            <li><b>Secular Nation: </b>All religions are treated equally without any bias. No religion is given special
+                treatment, and everyone is free to practice their faith.</li>
+        </ul>
+        <div id="navigation">
+            <button id="prev" class="hidden" onclick="prevPreamble()" on>Previous</button>
+            <h2>Press Q to Quit</h2>
+            <button id="next" onclick="nextPreamble()">Next</button>
+        </div>
+    </div>
+
+    <div class="preamble hidden">
+        <button id="alltopic" onclick="closePreamble()">Menu</button>
+        <h1>Preamble</h1>
+        <ul>
+            <li><b>Democratic System: </b>Leaders are elected by the people, and citizens have the power to vote. This
+                means people choose who represents them in the government.</li>
+            <br>
+            <li><b>Justice, Liberty, Equality: </b>The Constitution guarantees fairness, freedom, and equal rights for
+                everyone. Everyone is treated equally, has the freedom to express themselves, and has access to fair
+                opportunities.</li>
+        </ul>
+        <div id="navigation">
+            <button id="prev" onclick="prevPreamble()" on>Previous</button>
+            <h2>Press Q to Quit</h2>
+            <button id="next" class="hidden" onclick="nextPreamble()">Next</button>
+        </div>
+    </div>
+    <div id="npc1" class=" hidden conv">
+        <p>Did you know? <br>The Preamble is often referred to as <br> the "Mini-Constitution" because <br>
+            it summarises the essence of the entire document.</p>
+    </div>
+    <div id="npc1p" class="hidden conv">
+        <p>Hi Boss</p>
+    </div>
+    <div id="npc2p" class="hidden conv">
+        <p>Hi Boss</p>
+    </div>
+    <div id="npc2" class="hidden conv">
+        <p>Welcome To ConQuest <br>
+            Please Complete The Games in this level to move to the next level <br>
+            Press I to Access the Info Page</p>
+    </div>
+
+    <div id="progress">
+        <div class="loading-bar" id="loadingBar"></div>
+        <h3>Lvl 1</h3>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script
+        src="https://mediafiles.botpress.cloud/fb82c3c2-66cb-4282-86a2-ddafece5c8eb/webchat/v2.1/config.js"></script>
+    <script src="/map/assets/data/collisions.js"></script>
+    <script src="/map/assets/data/teleport.js"></script>
+    <script src="/map/assets/data/interact.js"></script>
+    <script src="/map/classes.js"></script>
+    <script src="/map/index.js" defer></script>
+</body>
+
+</html>
